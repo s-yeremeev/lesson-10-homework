@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <style>
+   table {
+    width: 100%; /* Ширина таблицы */
+    background: blue; /* Цвет фона таблицы */
+    color: red; /* Цвет текста */
+    border-spacing: 1px; /* Расстояние между ячейками */
+   }
+   td, th {
+    background: white; /* Цвет фона ячеек */
+    padding: 5px; /* Поля вокруг текста */
+   }
+  </style>
+</head>
+<body>
+        <label for="title">Player</label>
+        <button id="newCard" type="submit">New Card</button>
+        <button id="pass" type="submit">Pass</button>
+    <table border="1" id="messages">
+           <div> <br> </div>
+   <tr>
+        <th>Player</th>
+        <th>ArtInt</th>
+   </tr>
+    <tr>
+        <td id ="pointsPlayer">0</td>
+        <td id ="pointsArtInt">0</td>
+    </tr>
+    </table>
+ <script  src="./src/index.js" defer></script> 
+</body>
+</html>
