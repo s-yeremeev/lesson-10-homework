@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-     <style>
-   table {
-    width: 100%; /* Ширина таблицы */
-    background: blue; /* Цвет фона таблицы */
-    color: red; /* Цвет текста */
-    border-spacing: 1px; /* Расстояние между ячейками */
+    <title>Game</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css" rel="stylesheet">
+    <style>
+    table {
+        width: 25%;
    }
    td, th {
-    background: white; /* Цвет фона ячеек */
-    padding: 5px; /* Поля вокруг текста */
+        background: turquoise; 
+        padding: 10px; 
    }
+   button {
+        background: grey; 
+        color: blue;
+     }
   </style>
 </head>
 <body>
-        <label for="title">Player</label>
-        <button id="newCard" type="submit">New Card</button>
-        <button id="pass" type="submit">Pass</button>
+    <button class ="button is-large is-info" id="newCard" type="submit">NEW CARD</button>
+    <button class ="button is-large is-info" id="pass" type="submit">PASS</button>
     <table border="1" id="messages">
            <div> <br> </div>
-   <tr>
+    <tr>
         <th>Player</th>
-        <th>ArtInt</th>
-   </tr>
+        <th style ="display :none">ArtInt</th>
+    </tr>
     <tr>
         <td id ="pointsPlayer">0</td>
-        <td id ="pointsArtInt">0</td>
+        <td id ="pointsArtInt" style ="display :none">0</td>
     </tr>
     </table>
+ <script  src="./src/const.js" defer></script> 
  <script  src="./src/index.js" defer></script> 
 </body>
 </html>
